@@ -1,0 +1,33 @@
+<!--  Replace menu links here -->
+
+{% if page.url == "/" %}
+<li class="nav-item active">
+{% else %}
+<li class="nav-item">
+{% endif %}
+<a class="nav-link" href="{{ site.baseurl }}/index.html"><i class="fas fa-edit"></i> Home</a>
+</li>
+
+{% if page.url == "/about" %}
+<li class="nav-item active">
+{% else %}
+<li class="nav-item">
+{% endif %}
+<a class="nav-link" href="{{ site.baseurl }}/about"><i class="far fa-address-card"></i> About</a>
+</li>
+
+{% if page.url == "/featured" %}
+<li class="nav-item active">
+{% else %}
+<li class="nav-item">
+{% endif %}
+<a class="nav-link" href="{{ site.baseurl }}/about"><i class="far fa-star"></i> Featured</a>
+</li>
+
+{% if page.url == "/stories" %}
+<li class="nav-item active">
+{% else %}
+<li class="nav-item">
+{% endif %}
+<a class="nav-link" href="{{ site.baseurl }}/categories">Stories</a>
+</li>

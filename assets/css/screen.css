@@ -4,7 +4,7 @@ Copyright: Sal, WowThemes.net, https://www.wowthemes.net
 License: https://www.wowthemes.net/freebies-license/ 
 */
 @media screen and (min-width:1500px) {
-    html { font-size:18px; } /* Increase the font size on higher resolutions */
+    html { font-size:16px; } /* Increase the font size on higher resolutions */
     .container {max-width:80%;}
 }
 .mainheading {
@@ -65,16 +65,15 @@ section.recent-posts {
 
 .section-title h2 {
     border-bottom: 1px solid rgba(0, 0, 0, .125);
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-weight: 700;
-    font-size: 1.4rem;
-    margin-bottom: 27px;
+    font-size: 1.3rem;
 }
 
 .section-title span {
     border-bottom: 1px solid rgba(0, 0, 0, .44);
     display: inline-block;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin-bottom: -1px;
 }
 
@@ -105,15 +104,30 @@ section.recent-posts {
 }
 
 .listfeaturedtag {
-    border: 1px solid rgba(0, 0, 0, .125);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
+.listfeaturedtag .wrapcontainer {
+    display: flex;
+    flex: 0 0 auto;
+    overflow: hidden;
+    height: 100%;
+    padding-top: 1rem;
+}
+
 .listfeaturedtag .wrapthumbnail {
-    height: 290px;
+    align-self: center;
+    max-height: 11rem;
+    overflow: hidden;
+    /*
     flex: 0 0 auto;
     height: 100%;
+    max-height: 150 px;
+    display: flex;
+    overflow: hidden;
+    padding: 1rem;*/
 }
 
 .maxthumb {
@@ -121,9 +135,18 @@ section.recent-posts {
     overflow: hidden;
 }
 
-.listfeaturedtag .card,
+.postthumb {
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.listfeaturedtag .card {
+    border: 0;
+}
+
 .card-footer {
     border: 0;
+    padding-top: 0;
 }
 
 .listfeaturedtag .thumbnail {
@@ -142,16 +165,16 @@ section.recent-posts {
 
 .listfeaturedtag h2.card-title,
 .listrecent h2.card-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    line-height: 1.25;
+    line-height: 1.1;
 }
 
 .listfeaturedtag h4.card-text,
 .listrecent h4.card-text {
     color: rgba(0, 0, 0, .44);
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: 1.4;
     font-weight: 400;
 }
 
@@ -898,4 +921,9 @@ iframe {
 .lazyimg[data-srcset] {
     opacity: 0;
     transition: opacity .25s;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 0.75rem; 
 }
