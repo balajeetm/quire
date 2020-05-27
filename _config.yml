@@ -43,9 +43,13 @@ plugins:
 jekyll-archives:
   enabled:
     - categories
-  layout: archive
+    - year
+  layouts:
+    category: archive_category
+    year: archive_year
   permalinks:
     category: '/category/:name/'
+    year: '/archives/year/:year/'
     
 # Pagination 
 paginate: 6

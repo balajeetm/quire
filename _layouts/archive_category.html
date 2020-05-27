@@ -1,0 +1,22 @@
+---
+layout: default
+title: Archive
+---
+
+<!-- Begin List Posts
+================================================== -->
+<section class="recent-posts">
+<div class="section-title">
+    <div class ="p-2 bg-secondary text-white h5">{{ page.type | capitalize }} | {{ page.title}}</div></a>
+</div>
+<div class="row listrecent">
+
+{% for post in page.posts %}
+
+    {% include funfeaturedbox.html %}
+
+{% endfor %}
+
+</div>
+</section>
+
