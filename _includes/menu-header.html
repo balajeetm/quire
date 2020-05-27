@@ -32,6 +32,7 @@
 <a class="nav-link" href="{{ site.baseurl }}/categories"><i class="fas fa-stream"></i> Categories</a>
 </li>
 
+{% comment %}
 {% if page.url == "/archives" %}
 <li class="nav-item active">
 {% else %}
@@ -39,3 +40,4 @@
 {% endif %}
 <a class="nav-link" href="{{ site.baseurl }}/archives"><i class="far fa-clone"></i> Archives</a>
 </li>
+{% endcomment %}

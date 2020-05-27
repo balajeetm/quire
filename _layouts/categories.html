@@ -15,11 +15,11 @@ permalink: "/categories.html"
             {% assign categories_list = site.categories %}
             {% if categories_list.first[0] == null %}
                 {% for category in categories_list %}
-                    <a class="btn btn-dark mr-1" role="button" href="{{site.baseurl}}/category/{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | capitalize }} ({{ site.tags[category].size }})</a>
+                    <a class="btn btn-dark mr-1" role="button" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | capitalize }} ({{ site.tags[category].size }})</a>
                 {% endfor %}
             {% else %}
                 {% for category in categories_list %}
-                    <a class="btn btn-dark mr-1" role="button" href="{{site.baseurl}}/category/{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a>
+                    <a class="btn btn-dark mr-1" role="button" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a>
                 {% endfor %}
             {% endif %}
             {% assign categories_list = nil %}
