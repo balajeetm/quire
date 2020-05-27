@@ -88,6 +88,7 @@ ga('send', 'pageview');
 
 <div class="container">
 
+{% if page.url == "/" %}
 <!-- Site Title
 ================================================== -->
 <div class="mainheading">
@@ -96,6 +97,7 @@ ga('send', 'pageview');
         {{ site.description }}
     </p>
 </div>
+{% endif %}
 
 <!-- Content
 ================================================== -->
@@ -123,6 +125,7 @@ ga('send', 'pageview');
 
 <!-- Categories Jumbotron
 ================================================== -->
+{% comment %}
 <div class="jumbotron fortags">
 	<div class="d-md-flex h-100">
 		<div class="col-md-4 transpdark align-self-center text-center h-100">
@@ -145,6 +148,7 @@ ga('send', 'pageview');
 		</div>
 	</div>
 </div>
+{% endcomment %}
 
 <!-- Begin Footer
 ================================================== -->

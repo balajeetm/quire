@@ -21,13 +21,21 @@
 {% else %}
 <li class="nav-item">
 {% endif %}
-<a class="nav-link" href="{{ site.baseurl }}/about"><i class="far fa-star"></i> Featured</a>
+<a class="nav-link" href="{{ site.baseurl }}/featured"><i class="far fa-star"></i> Featured</a>
 </li>
 
-{% if page.url == "/stories" %}
+{% if page.url == "/categories" %}
 <li class="nav-item active">
 {% else %}
 <li class="nav-item">
 {% endif %}
-<a class="nav-link" href="{{ site.baseurl }}/categories">Stories</a>
+<a class="nav-link" href="{{ site.baseurl }}/categories"><i class="fas fa-stream"></i> Categories</a>
+</li>
+
+{% if page.url == "/archives" %}
+<li class="nav-item active">
+{% else %}
+<li class="nav-item">
+{% endif %}
+<a class="nav-link" href="{{ site.baseurl }}/archives"><i class="far fa-clone"></i> Archives</a>
 </li>
