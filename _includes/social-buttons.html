@@ -1,0 +1,25 @@
+<div class="float-left">
+    <ul class="fun-list-inline fun-social-buttons">
+        {% if author.twitter %}
+        <li>
+            <a href="{{ author.twitter }}">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+        {% endif %}
+        {% if author.linkedin %}
+        <li>
+            <a href="{{ author.linkedin }}">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        {% endif %}
+        {% if author.web %}
+        <li>
+            <a href="{{ author.web }}">
+                <i class="fab fa-chrome"></i>
+            </a>
+        </li>
+        {% endif %}
+    </ul>
+</div>

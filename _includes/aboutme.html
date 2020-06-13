@@ -1,0 +1,43 @@
+{% assign author = site.authors.bala %}
+<section class="pt-2">
+    <div class="section-title text-primary" id="aboutme">
+        <h2><span>About Me - Why I'm Fun!</span></h2>
+    </div>
+
+    <!--div class="jumbotron p-1 m-0" style="background-color: #EDE7F6;"-->
+    <div class="container-fluid">
+        <img class="rounded-circle fun-img-center" src="{{ site.baseurl }}/assets/images/bala.png"
+            alt="Responsive image" style="height: 25vh;">
+        <div>
+            <div>
+                <span class="fun-title d-inline-block h2 text-primary" style="--fun-title-bgc: #000">Hi, Glad to e-meet
+                    you</span>
+            </div>
+        </div>
+
+        <p>I'm <a href="{{ author.linkedin }}" class="h5 text-primary">Balajee Thachakkadu Mohan</a>, a "containerholic
+            & a passionate software techy hailing from Bangalore, India.<br>
+            <br>
+            I love dissecting science & technology to evaluate the nitty gritties & understand the nuances.<br>
+            I do this vocationally as a Principal Software Development Engineer | Director Technology at Publicis
+            Sapient where I blend my microservices, distributed systems, docker & kubernetes expertise to solve customer
+            challenges at internet scale. I juggle a range of technologies and thought paradigms, "unjargoning" my way down the rabbit hole of buzz words.<br>
+            <br>
+            I'm also an orator who speaks at International Tech conferences & work alongside budding
+            start-ups mentoring them for success.<br>
+            <br>
+            I'm fond of people who resonate with my flair for new technologies & love discussing ideas & solutions with
+            them.<br>
+            Buzz me on <a href="{{ author.twitter }}" class="text-primary">twitter</a> or other mediums below to say hi or to discuss
+            interesting topics.<br>
+            <br>
+            Wish you a blessed day!
+        </p>
+
+        <div class="container-fluid p-1">
+            {% include social-buttons.html %}
+        </div>
+        <br>
+        <br>
+    </div>
+</section>

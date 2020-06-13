@@ -3,6 +3,9 @@ Template Name: Mediumish
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net 
 License: https://www.wowthemes.net/freebies-license/ 
 */
+:root {
+    --fun-title-bgc: #fff;
+}
 @media screen and (min-width:1500px) {
     html { font-size:16px; } /* Increase the font size on higher resolutions */
     .container {max-width:80%;}
@@ -916,4 +919,114 @@ iframe {
 .card-body {
     flex: 1 1 auto;
     padding: 0.75rem; 
+}
+
+/* Needed to override md-bootstrap card features */
+.card {
+    box-shadow: none
+}
+
+.funcats .pes:last-child {
+	display:none;
+}
+
+.fun-tiles {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.fun-tile {
+    height: 30vh!important;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.fun-tile img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.fun-tile .fun-content {
+    flex-direction: column;
+}
+
+.fun-tile .fun-title {
+    margin-bottom: 0;
+    font-size: 1.75em;
+    line-height: 1.2;
+}
+
+.fun-title:after {
+    content: '';
+    background-color: var(--fun-title-bgc);
+    display: block;
+    height: 2px;
+    margin: 0.325em 0 0.5em 0;
+    width: calc(100% + 0.5em);
+}
+
+.fun-tile .fun-tag {
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: .25em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.reverse-overlay .mask {
+    opacity: 1;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out
+}
+
+.reverse-overlay .mask:hover {
+    opacity: 0
+}
+
+.fun-auth-card img {
+    height: 200px;
+    display: block;
+    margin: auto;
+    padding: 3px;
+}
+
+.fun-img-center {
+    display: block;
+    margin: auto;
+}
+
+
+ul.fun-social-buttons {
+    margin-bottom: 0;
+}
+
+.fun-list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
+}
+
+.fun-list-inline>li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+ul.fun-social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    transition: all .3s;
+    text-align: center;
+}
+
+.fun-auth-posts{
+    height: 40px;
 }

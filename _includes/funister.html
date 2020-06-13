@@ -1,0 +1,26 @@
+<!-- begin post -->
+{% assign author = site.authors[post.author] %}
+
+
+<!-- end post -->
+
+{% comment %}
+<img class="rounded-circle" src="{{ site.baseurl }}{{ author.avatar }}" alt="Responsive image">
+                  
+{% if author.github %}
+<a href="http://github.com/{{ site.github }}"><i class="fa fa-github"></i></a>
+{% endif %}
+{% if author.email %}
+<a href="mailto:{{ site.email}}"><i class="fa fa-envelope"></i></a>
+{% endif %}
+
+{% if author.twitter %}
+<a href="http://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a>
+{% endif %}
+{% if author.linkedin %}
+<a href="http://linkedin.com/in/{{ site.linkedin }}"><i class="fa fa-linkedin"></i></a>
+{% endif %}
+{% if author.stackoverflow %}
+<a href="http://stackoverflow.com/{{ site.stackoverflow }}"><i class="fa fa-stack-overflow"></i></a>
+{% endif %}
+{% endcomment %}

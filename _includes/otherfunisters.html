@@ -1,0 +1,65 @@
+<section class="recent-posts">
+
+  <div class="section-title text-success" id="otherfunisters">
+    <h2><span>Other Funisters</span></h2>
+  </div>
+
+  <p>
+    There is so much to learn & so much to share.<br>
+    When it comes to sharing knowledge, the more the merrier.<br>
+    Here's the amazing team of funisters who would author the blogs
+  </p>
+
+  <div class="row listrecent">
+    {% for auth in site.authors %}
+    {% assign author = auth[1] %}
+
+    <div class="col-lg-4 col-md-6 card-group pb-2">
+
+      <div class="fun-auth-card card h-100" id="author-{{author.display_name | slugify}}">
+
+        {% if author.avatar %}
+        <div class="view overlay zoom">
+          <a href="{{ author.web }}">
+            <img class="rounded-circle" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+          </a>
+        </div>
+        {% else %}
+        <div class="view overlay zoom">
+          <a href="{{ author.web }}">
+            <img class="rounded-circle" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x"
+              alt="{{ author.display_name }}">
+          </a>
+        </div>
+        {% endif %}
+
+        <div class="card-body">
+          <h2 class="card-title">
+            <a class="text-dark" href="{{ author.web }}">{{ author.name }}</a>
+          </h2>
+          <h4 class="card-text">{{ author.description }}</h4>
+        </div>
+
+        <div class="card-footer bg-white">
+          <div class="container-fluid p-0">
+            {% include social-buttons.html %}
+
+            {% if author.posts %}
+            <div class="float-right">
+              <div class="d-flex align-items-center font-weight-normal fun-auth-posts">
+                <a href="">Posts</a>
+              </div>
+            </div>
+            {% endif %}
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    {% endfor %}
+  </div>
+
+</section>

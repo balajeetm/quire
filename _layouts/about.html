@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+<div class="pb-4 fun-tiles m-5">
+  <!-- Grid row -->
+  <div class="row m-0 p-0">
+    <!-- Grid column -->
+    <div class="fun-tile col-md-12 view reverse-overlay">
+      <a href="#aboutme">
+        <img src="{{site.baseurl}}/assets/images/balajee_gids19.jpg" class="img-fluid z-depth-1" alt="About Me">
+        <!-- This section becomes visible on hover & is optional -->
+        <div class="fun-content mask flex-center">
+          <div class="fun-title white-text">About Me</div>
+          <div class="fun-tag white-text">Why I'm fun</div>
+        </div>
+        <!-- This section vanishes on hover -->
+        <div class="fun-content mask flex-center rgba-indigo-strong">
+          <div class="fun-title white-text">About Me</div>
+          <div class="fun-tag white-text">Why I'm fun</div>
+        </div>
+      </a>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+
+  <!-- Grid row -->
+  <div class="row m-0 p-0">
+    <!-- Grid column -->
+    <div class="fun-tile col-md-8 view reverse-overlay">
+      <a href="#aboutblog">
+
+        <img src="{{site.baseurl}}/assets/images/balajee_gids18.jpg" class="img-fluid z-depth-1" alt="About the blog">
+        <!-- This section becomes visible on hover & is optional -->
+        <div class="fun-content mask flex-center">
+          <div class="fun-title white-text">About the blog</div>
+          <div class="fun-tag white-text">Why the blog's fun</div>
+        </div>
+        <!-- This section vanishes on hover -->
+        <div class="fun-content mask flex-center rgba-red-strong">
+          <div class="fun-title white-text">About the blog</div>
+          <div class="fun-tag white-text">Why the blog's fun</div>
+        </div>
+      </a>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="fun-tile col-md-4 p-0 m-0 view reverse-overlay">
+      <a href="#otherfunisters">
+        <img src="{{site.baseurl}}/assets/images/funisters.jpg" class="img-fluid z-depth-1"
+          alt="Other funisters">
+        <!-- This section becomes visible on hover & is optional -->
+        <div class="fun-content mask flex-center">
+          <div class="fun-title white-text">Other Funisters</div>
+          <div class="fun-tag white-text">Other fun folks</div>
+        </div>
+        <!-- This section vanishes on hover -->
+        <div class="fun-content mask flex-center rgba-teal-strong">
+          <div class="fun-title white-text">Other Funisters</div>
+          <div class="fun-tag white-text">Other fun folks</div>
+        </div>
+      </a>
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+</div>
+
+{% include aboutme.html %}
+{% include aboutblog.html %}
+{% include otherfunisters.html %}
