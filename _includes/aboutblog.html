@@ -3,11 +3,12 @@
     <h2><span>About the blog - Why the blog's Fun!</span></h2>
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid article-post">
     <div class="d-flex flex-column justify-content-center align-items-center">
       <img class="rounded-circle" src="{{ site.baseurl }}/assets/images/book.gif" alt="Responsive image">
     </div>
 
+    {% assign author = site.authors.bala %}
     <p>
       I was always intrigued by the unfathomable potential & power of nature.<br>
       Everything that crossed my eyes seemed amazing;<br>
@@ -18,8 +19,8 @@
     </p>
 
     <p>
-      Growing up in an engineering household, I dug a little deeper to recreate a working model of whatever I saw.<br>
-      Hoping, the characteristic engineering impulse would at least aid me in understanding things better. However I ended up with more questions on the what, how, why & why not, than answers.
+      Growing up in an engineering household, I dug a little deeper to recreate a working model of whatever I saw; hoping, the characteristic engineering impulse would at least aid me in understanding things better.<br>
+      However I ended up with more questions on the what, how, why & why not; than answers.
     </p>
 
     <p>
@@ -53,7 +54,7 @@
 
     <p>
       I seek genuine feedback on the contents of my blog. If you have any suggestions for me or my blog, feel free to
-      reach me out on twitter or linkedin.<br>
+      reach me out on <a href="{{ author.twitter }}">twitter</a> or <a href="{{ author.linkedin }}">linkedin</a>.<br>
       Your comments are much appreciated.
     </p>
 

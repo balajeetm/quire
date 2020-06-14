@@ -30,6 +30,7 @@ authors:
     twitter: https://twitter.com/balajeetm
     posts: true
     description: |
+      <b class="text-success">Director Technology | Publicis Sapient</b><br>
       A self proclaimed geek, creative genius, visionary, brave risk-taker, healthy sport, avocational writer and an astute liar. ;)<br>
       A passionate Software Techy, who is inclined towards problem solving.
   dheeraj:
@@ -38,24 +39,26 @@ authors:
     linkedin: https://www.linkedin.com/in/dheeraj-kysetti-845261a/
     post: false
     description: |
-      Chief Architect | Tesco Technology<br>
+      <b class="text-success">Chief Architect | Tesco Technology</b><br>
       Builds fault tolerant Distributed Applications that scale on-demand. Has in-depth knowledge on Distributed technologies toolkit which enable him to solve wide class of distributed problem statements at internet scale.
   mahesh:
     name: Mahesh Kumar R
     posts: false
     display_name: Mahesh Kumar
+    avatar: 'assets/images/mahesh.jpg'
     description: |
-      Chief Operating Officer | Expressive Life<br>
+      <b class="text-success">Chief Operating Officer | Expressive Life</b><br>
       Entrepreneur, Innovator & Creative designer.<br>
       Driving initiatives & business strategy to solve customer problems.
   chandan:
     name: Chandan Kumar Singha
     display_name: Chandan Singha
+    avatar: 'assets/images/chandan.jpg'
     web: https://chandan.xyz/
     linkedin: https://www.linkedin.com/in/chandansingha/
     post: false
     description: |
-      Chief Technology Officer | Litifer Technologies<br>
+      <b class="text-success">Chief Technology Officer | Litifer Technologies</b><br>
       Wears multiple hats from writing code, managing infrastructure, working on analytics, strategizing content, and evangelizing products. His interests lies in Distributed Systems, Kubernetes, cloud, security, algorithms, data structures.
   prajwal:
     name: Prajwal Gurumurthy
@@ -64,7 +67,7 @@ authors:
     linkedin: https://www.linkedin.com/in/prajwal-gurumurthy/
     post: false
     description: |
-      Chief Architect | Tesco Technology<br>
+      <b class="text-success">Chief Architect | Tesco Technology</b><br>
       Believes simplicity is the purest form of knowledge. Responsible for 3DR[ Design, Development, Deployment and Run] of omni basket, transactional Enterprise Customer Order APIs at retail scale for TESCO.
 
 
