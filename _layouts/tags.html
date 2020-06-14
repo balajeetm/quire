@@ -17,13 +17,13 @@ permalink: "/tags.html"
             {% if tags_list.first[0] == null %}
             {% for tag in tags_list %}
             <a class="btn btn-dark mr-1" role="button"
-                href="{{site.baseurl}}tags#{{ tag | url_escape | strip | replace: ' ', '-' }}">{{ tag }}
+                href="{{site.baseurl}}/tags#{{ tag | url_escape | strip | replace: ' ', '-' }}">{{ tag }}
                 ({{ site.tags[tag].size }})</a>
             {% endfor %}
             {% else %}
             {% for tag in tags_list %}
             <a class="btn btn-dark mr-1" role="button"
-                href="{{site.baseurl}}tags#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}">{{ tag[0] }}
+                href="{{site.baseurl}}/tags#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}">{{ tag[0] }}
                 ({{ tag[1].size }})</a>
             {% endfor %}
             {% endif %}
