@@ -8,10 +8,10 @@ Join me, &lt;a href=&quot;about#aboutme&quot;&gt;Balajee Thachakkadu Mohan&lt;/a
 Let's have fun as we discard the sugarcoats!&lt;br&gt;
 Come let's unjargon.
 </description>
-    <link>http://localhost:4003/</link>
-    <atom:link href="http://localhost:4003/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Jun 2020 15:41:16 +0530</pubDate>
-    <lastBuildDate>Sun, 14 Jun 2020 15:41:16 +0530</lastBuildDate>
+    <link>http://localhost:4003/quire/</link>
+    <atom:link href="http://localhost:4003/quire/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 14 Jun 2020 16:10:00 +0530</pubDate>
+    <lastBuildDate>Sun, 14 Jun 2020 16:10:00 +0530</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -120,7 +120,7 @@ Come let's unjargon.
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8.jpg&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/quire/assets/images/8.jpg&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;reference-lists&quot;&gt;Reference lists&lt;/h2&gt;
 
@@ -135,8 +135,8 @@ Come let's unjargon.
 &lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 12 Jun 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4003/powerful-things-markdown-editor/</link>
-        <guid isPermaLink="true">http://localhost:4003/powerful-things-markdown-editor/</guid>
+        <link>http://localhost:4003/quire/powerful-things-markdown-editor/</link>
+        <guid isPermaLink="true">http://localhost:4003/quire/powerful-things-markdown-editor/</guid>
         
         
         <category>Jekyll</category>
@@ -160,8 +160,8 @@ Come let's unjargon.
 &lt;p&gt;As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original - which sees Little Red Riding Hood being gobbled up as well as her grandmother - is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.&lt;/p&gt;
 </description>
         <pubDate>Tue, 12 Jun 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4003/first-mass-produced/</link>
-        <guid isPermaLink="true">http://localhost:4003/first-mass-produced/</guid>
+        <link>http://localhost:4003/quire/first-mass-produced/</link>
+        <guid isPermaLink="true">http://localhost:4003/quire/first-mass-produced/</guid>
         
         
         <category>Jekyll</category>
@@ -202,7 +202,7 @@ Come let's unjargon.
 
 &lt;p&gt;If you want to get really fancy, you can even add syntax highlighting using Rouge.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8.jpg&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/quire/assets/images/8.jpg&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;reference-lists&quot;&gt;Reference lists&lt;/h2&gt;
 
@@ -217,8 +217,8 @@ Come let's unjargon.
 &lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 12 Jun 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4003/education/</link>
-        <guid isPermaLink="true">http://localhost:4003/education/</guid>
+        <link>http://localhost:4003/quire/education/</link>
+        <guid isPermaLink="true">http://localhost:4003/quire/education/</guid>
         
         
         <category>Jekyll</category>
@@ -242,8 +242,8 @@ Come let's unjargon.
 &lt;/blockquote&gt;
 </description>
         <pubDate>Tue, 12 Jun 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4003/acumulated-experience/</link>
-        <guid isPermaLink="true">http://localhost:4003/acumulated-experience/</guid>
+        <link>http://localhost:4003/quire/acumulated-experience/</link>
+        <guid isPermaLink="true">http://localhost:4003/quire/acumulated-experience/</guid>
         
         
         <category>Jekyll</category>
@@ -265,8 +265,8 @@ Come let's unjargon.
 &lt;p&gt;For more information about how to use &lt;code class=&quot;highlighter-rouge&quot;&gt;Bundler&lt;/code&gt; in your Jekyll project, this tutorial should provide answers to the most common questions and explain how to get up and running quickly.&lt;/p&gt;
 </description>
         <pubDate>Sat, 12 May 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4003/about-bundler/</link>
-        <guid isPermaLink="true">http://localhost:4003/about-bundler/</guid>
+        <link>http://localhost:4003/quire/about-bundler/</link>
+        <guid isPermaLink="true">http://localhost:4003/quire/about-bundler/</guid>
         
         
         <category>Jekyll</category>
@@ -280,8 +280,8 @@ Come let's unjargon.
 &lt;p&gt;It seems to me that education has a two-fold function to perform in the life of man and in society: the one is utility and the other is culture. Education must enable a man to become more efficient, to achieve with increasing facility the ligitimate goals of his life.&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4003/we-all-wait-for-summer/</link>
-        <guid isPermaLink="true">http://localhost:4003/we-all-wait-for-summer/</guid>
+        <link>http://localhost:4003/quire/we-all-wait-for-summer/</link>
+        <guid isPermaLink="true">http://localhost:4003/quire/we-all-wait-for-summer/</guid>
         
         
         <category>Jekyll</category>
@@ -306,8 +306,8 @@ Come let's unjargon.
 
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4003/tree-of-codes/</link>
-        <guid isPermaLink="true">http://localhost:4003/tree-of-codes/</guid>
+        <link>http://localhost:4003/quire/tree-of-codes/</link>
+        <guid isPermaLink="true">http://localhost:4003/quire/tree-of-codes/</guid>
         
         
         <category>Jekyll</category>
@@ -331,8 +331,8 @@ Come let's unjargon.
 &lt;p&gt;As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original — which sees Little Red Riding Hood being gobbled up as well as her grandmother — is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4003/red-riding/</link>
-        <guid isPermaLink="true">http://localhost:4003/red-riding/</guid>
+        <link>http://localhost:4003/quire/red-riding/</link>
+        <guid isPermaLink="true">http://localhost:4003/quire/red-riding/</guid>
         
         
         <category>Jekyll</category>
@@ -359,8 +359,8 @@ Come let's unjargon.
 
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4003/press-and-education/</link>
-        <guid isPermaLink="true">http://localhost:4003/press-and-education/</guid>
+        <link>http://localhost:4003/quire/press-and-education/</link>
+        <guid isPermaLink="true">http://localhost:4003/quire/press-and-education/</guid>
         
         
         <category>Jekyll</category>
@@ -382,8 +382,8 @@ Come let's unjargon.
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4003/options-for-creating-new-site-with-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4003/options-for-creating-new-site-with-jekyll/</guid>
+        <link>http://localhost:4003/quire/options-for-creating-new-site-with-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4003/quire/options-for-creating-new-site-with-jekyll/</guid>
         
         
         <category>Jekyll</category>
