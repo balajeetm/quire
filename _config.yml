@@ -9,7 +9,7 @@ description: |
   Come let's unjargon.
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.png'
-baseurl: /quire
+baseurl: 
 google_analytics: 'UA-46278016-1'
 #disqus: 'demowebsite'
 #mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
@@ -85,12 +85,15 @@ jekyll-archives:
   enabled:
     - categories
     - year
+    - tags
   layouts:
     category: archive_category
+    tag: archive_category
     year: archive_year
   permalinks:
     category: '/category/:name/'
-    year: '/archives/year/:year/'
+    tag: '/tag/:name/'
+    year: '/year/:year/'
     
 # Pagination 
 paginate: 6

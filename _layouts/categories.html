@@ -5,43 +5,50 @@ permalink: "/categories.html"
 ---
 
 <div class="jumbotron fortags">
-	<div class="d-md-flex h-100">
-		<div class="col-md-4 transpdark align-self-center text-center h-100">
+    <div class="d-md-flex h-100">
+        <div class="col-md-4 transpdark align-self-center text-center h-100">
             <div class="d-md-flex align-items-center justify-content-center h-100">
-                <h2 class="d-md-block align-self-center py-1 font-weight-light">Categories <span class="d-none d-md-inline">→</span></h2>
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Categories <span
+                        class="d-none d-md-inline">→</span></h2>
             </div>
-		</div>
-		<div class="col-md-8 p-5 align-self-center text-center">
+        </div>
+        <div class="col-md-8 p-5 align-self-center text-center">
             {% assign categories_list = site.categories %}
             {% if categories_list.first[0] == null %}
-                {% for category in categories_list %}
-                    <a class="btn btn-dark mr-1" role="button" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | capitalize }} ({{ site.tags[category].size }})</a>
-                {% endfor %}
+            {% for category in categories_list %}
+            <a class="btn btn-dark mr-1" role="button"
+                href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | capitalize }}
+                ({{ site.tags[category].size }})</a>
+            {% endfor %}
             {% else %}
-                {% for category in categories_list %}
-                    <a class="btn btn-dark mr-1" role="button" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a>
-                {% endfor %}
+            {% for category in categories_list %}
+            <a class="btn btn-dark mr-1" role="button"
+                href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | capitalize }}
+                ({{ category[1].size }})</a>
+            {% endfor %}
             {% endif %}
             {% assign categories_list = nil %}
-		</div>
-	</div>
+        </div>
+    </div>
 </div>
 
 <div class="row listrecent">
-{% for category in site.categories %}
-<div class="col-md-12 mt-4">
-    <a href="{{site.baseurl}}/category/{{category[0] | url_escape | strip | replace: ' ', '-'}}">
-    <div class ="p-2 bg-info text-white h5" id="{{ category[0] | replace: ' ','-' }}">Category | {{ category[0] | capitalize }}</div></a>
-</div>
-{% assign pages_list = category[1] %}
-{% for post in pages_list %}
-{% if post.title != null %}
-{% if group == null or group == post.group %}
-{% include funstorybox.html %}
-{% endif %}
-{% endif %}
-{% endfor %}
-{% assign pages_list = nil %}
-{% assign group = nil %}
-{% endfor %}
+    {% for category in site.categories %}
+    <div class="col-md-12 mt-4">
+        <a href="{{site.baseurl}}/category/{{category[0] | url_escape | strip | replace: ' ', '-' | downcase}}">
+            <div class="p-2 bg-info text-white h5" id="{{ category[0] | replace: ' ','-' }}">Category |
+                {{ category[0] | capitalize }}</div>
+        </a>
+    </div>
+    {% assign pages_list = category[1] %}
+    {% for post in pages_list %}
+    {% if post.title != null %}
+    {% if group == null or group == post.group %}
+    {% include funstorybox.html %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+    {% endfor %}
 </div>

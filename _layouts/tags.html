@@ -4,20 +4,51 @@ layout: default
 permalink: "/tags.html"
 ---
 
-<div class="row listrecent">
-{% for tag in site.tags %}
-<div class="section-title col-md-12 mt-4">
-<h2 id="{{ tag[0] | replace: " ","-" }}">Tag <span class="text-capitalize">{{ tag[0] }}</span></h2>
+<div class="jumbotron fortags" style="--fortags-image: url(../images/13.jpg)">
+    <div class="d-md-flex h-100">
+        <div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Tags <span
+                        class="d-none d-md-inline">→</span></h2>
+            </div>
+        </div>
+        <div class="col-md-8 p-5 align-self-center text-center">
+            {% assign tags_list = site.tags %}
+            {% if tags_list.first[0] == null %}
+            {% for tag in tags_list %}
+            <a class="btn btn-dark mr-1" role="button"
+                href="{{site.baseurl}}tags#{{ tag | url_escape | strip | replace: ' ', '-' }}">{{ tag }}
+                ({{ site.tags[tag].size }})</a>
+            {% endfor %}
+            {% else %}
+            {% for tag in tags_list %}
+            <a class="btn btn-dark mr-1" role="button"
+                href="{{site.baseurl}}tags#{{ tag[0] | url_escape | strip | replace: ' ', '-' }}">{{ tag[0] }}
+                ({{ tag[1].size }})</a>
+            {% endfor %}
+            {% endif %}
+            {% assign tags_list = nil %}
+        </div>
+    </div>
 </div>
-{% assign pages_list = tag[1] %}
-{% for post in pages_list %}
-{% if post.title != null %}
-{% if group == null or group == post.group %}
-{% include postbox.html %}
-{% endif %}
-{% endif %}
-{% endfor %}
-{% assign pages_list = nil %}
-{% assign group = nil %}
-{% endfor %}
+
+<div class="row listrecent">
+    {% for tag in site.tags %}
+    <div class="col-md-12 mt-4">
+        <a href="{{site.baseurl}}/tag/{{tag[0] | url_escape | strip | replace: ' ', '-' | downcase}}">
+            <div class="p-2 bg-info text-white h5" id="{{ tag[0] | replace: " ","-" }}">Tag | <span>{{ tag[0] | capitalize }}</span>
+            </div>
+        </a>
+    </div>
+    {% assign pages_list = tag[1] %}
+    {% for post in pages_list %}
+    {% if post.title != null %}
+    {% if group == null or group == post.group %}
+    {% include funfeaturedbox.html %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+    {% endfor %}
 </div>

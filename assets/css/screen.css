@@ -5,6 +5,7 @@ License: https://www.wowthemes.net/freebies-license/
 */
 :root {
     --fun-title-bgc: #fff;
+    --fortags-image: url(../images/roses.jpeg);
 }
 @media screen and (min-width:1500px) {
     html { font-size:16px; } /* Increase the font size on higher resolutions */
@@ -53,7 +54,7 @@ pre {
 
 .site-content {
     min-height: 60vh;
-    padding-top: 1.5rem;
+    padding-top: 0.5rem;
     margin-top: 57px;
     transition: all 0.4s;
 }
@@ -789,7 +790,7 @@ iframe {
         padding: 0;
         height: 200px;
         border-radius: 0;
-        background-image: url(../images/roses.jpeg);
+        background-image: var(--fortags-image);
         background-size: cover;
     }
 
@@ -807,7 +808,7 @@ iframe {
     margin-top: 3rem;
     padding: 0;
     border-radius: 0;
-    background-image: url(../images/roses.jpeg);
+    background-image: var(--fortags-image);
     background-size: cover;
 }
 

@@ -32,12 +32,18 @@
 <a class="nav-link" href="{{ site.baseurl }}/categories"><i class="fas fa-stream"></i> Categories</a>
 </li>
 
-{% comment %}
+{% if page.url == "/tags" %}
+<li class="nav-item active">
+{% else %}
+<li class="nav-item">
+{% endif %}
+<a class="nav-link" href="{{ site.baseurl }}/tags"><i class="far fa-bookmark"></i> Tags</a>
+</li>
+
 {% if page.url == "/archives" %}
 <li class="nav-item active">
 {% else %}
 <li class="nav-item">
 {% endif %}
-<a class="nav-link" href="{{ site.baseurl }}/archives"><i class="far fa-clone"></i> Archives</a>
+<a class="nav-link" href="{{ site.baseurl }}/archives"><i class="far fa-file-archive"></i> Archives</a>
 </li>
-{% endcomment %}

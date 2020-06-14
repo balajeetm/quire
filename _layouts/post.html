@@ -108,7 +108,7 @@ post_class: post-template
                     {% for category in sortedCategories %}
                     <li>
                         <a class="smoothscroll badge badge-pill badge-default"
-                            href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">{{ category | capitalize | camelcase }}</a>
+                            href="{{site.baseurl}}/category/{{ category | replace: " ","-" | downcase }}">{{ category | capitalize | camelcase }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -122,7 +122,7 @@ post_class: post-template
                     {% for tag in sortedTags %}
                     <li>
                         <a class="smoothscroll badge badge-pill badge-info"
-                            href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">#{{ tag }}</a>
+                            href="{{site.baseurl}}/tag/{{ tag | replace: " ","-" | downcase }}">#{{ tag }}</a>
                     </li>
                     {% endfor %}
                 </ul>

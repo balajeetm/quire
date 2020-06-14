@@ -14,7 +14,7 @@
                                         {{ post.date | date: '%b %d, %Y' }} | <span class="text-muted">
                                             {% for category in post.categories %}
                                             <a class="text-capitalize text-info smoothscroll"
-                                                href="{{site.baseurl}}/categories#{{ category | downcase }}">{{ category }}</a><span
+                                                href="{{site.baseurl}}/category/{{ category | downcase }}">{{ category }}</a><span
                                                 class="pes">, </span>
                                             {% endfor %}
                                         </span>

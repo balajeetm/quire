@@ -1,7 +1,7 @@
 <section class="recent-posts">
 
   <div class="section-title text-success" id="otherfunisters">
-    <h2><span>Other Funisters</span></h2>
+    <h2><span>The Funisters</span></h2>
   </div>
 
   <p class="article-post">
@@ -47,7 +47,7 @@
             {% if author.posts %}
             <div class="float-right">
               <div class="d-flex align-items-center font-weight-normal fun-auth-posts">
-                <a href="">Posts</a>
+                <a href="{{ site.baseurl }}author-{{ author.display_name | slugify }}">Posts</a>
               </div>
             </div>
             {% endif %}
